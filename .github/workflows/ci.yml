@@ -13,8 +13,18 @@ on:
 jobs:
   my_first_job:
     name: terraform_plan
-    runs-on: selfhosted
+    runs-on: [self-hosted, Windows]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          c
     
     
+    
+    
+
 
 
