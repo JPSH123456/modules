@@ -1,0 +1,20 @@
+name: terraforminfra
+
+on:
+  pull_request:
+    # Sequence of patterns matched against refs/heads
+    branches:
+      - main
+  push:
+    # Sequence of patterns matched against refs/heads
+    branches:
+      - main
+
+jobs:
+  my_first_job:
+    name: terraform_plan
+    runs-on: selfhosted
+    
+    
+
+
